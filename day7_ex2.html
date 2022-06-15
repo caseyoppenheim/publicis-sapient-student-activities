@@ -1,0 +1,16 @@
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=EDGE">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+</head>
+<body>
+    <h1>Casey's Day 7 Activity 1</h1>
+    Happiness <input type="range" min="0" max="100" oninput="handleInput(event)">
+    <span id="s1"></span>
+    <script type="text/javascript">
+        function handleInput(e){
+            let value = e.target.value;
+            document.getElementById("s1").innerHTML=value;
+        }
+    </script>
+</body>
