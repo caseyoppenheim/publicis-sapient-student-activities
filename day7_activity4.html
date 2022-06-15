@@ -7,31 +7,15 @@
     <canvas id = "c1" style="border:2px white" width="800" height="800"></canvas>
     <script type="text/javascript">
         let ctx = document.getElementById('c1').getContext('2d');
-        ctx.beginPath();
-        ctx.arc(400,400, 300, 0, Math.PI, true);
-        ctx.fillStyle = 'red';
-        ctx.fill();
-        ctx.beginPath();
-        ctx.arc(400,400, 250, 0, Math.PI, true);
-        ctx.fillStyle = 'orange';
-        ctx.fill();
-        ctx.beginPath();
-        ctx.arc(400,400, 200, 0, Math.PI, true);
-        ctx.fillStyle = 'yellow';
-        ctx.fill();
-        ctx.beginPath();
-        ctx.arc(400,400, 150, 0, Math.PI, true);
-        ctx.fillStyle = 'green';
-        ctx.fill();
-        ctx.beginPath();
-        ctx.arc(400,400, 100, 0, Math.PI, true);
-        ctx.fillStyle = 'blue';
-        ctx.fill();
-        ctx.beginPath();
-        ctx.arc(400,400, 50, 0, Math.PI, true);
-        ctx.fillStyle = 'purple';
-        ctx.fill();
-
+        let width = 300;
+        let colors = ['red','orange','yellow','green','blue','purple']
+        for(let i = 0; i < 6; i++){
+            ctx.beginPath();
+            ctx.arc(400,400, width, 0, Math.PI, true);
+            ctx.fillStyle = colors[i];
+            ctx.fill();
+            width = width-50;
+        }
 
     </script>
 </body>
