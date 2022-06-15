@@ -1,0 +1,28 @@
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=EDGE">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+</head>
+<body>
+    <canvas id="c1" style="border: 2px solid pink" width="400" height="400"></canvas>
+    <script type='text/javascript'>
+        let ctx = document.getElementById('c1').getContext('2d');
+        for(let i = 0; i < 8; i++){
+            for(let j = 0; j < 8; j++){
+                ctx.fillStyle = 'pink';
+                ctx.fillRect(i*50,j*50,50,50);
+                j++;
+            }
+            i++;
+        }
+        for(let i = 1; i < 8; i++){
+            for(let j = 1; j < 8; j++){
+                ctx.fillStyle = 'pink';
+                ctx.fillRect(i*50,j*50,50,50);
+                j++;
+            }
+            i++;
+        }
+        
+    </script>
+</body>
